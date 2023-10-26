@@ -11,3 +11,8 @@
 ```
 conda create -p venv python=3.11 -y
 ```
+
+### Installing all the dependencies
+```
+pip install -r requirements.txt
+```

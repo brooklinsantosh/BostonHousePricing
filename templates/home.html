@@ -1,3 +1,75 @@
-<h1>
-    Hello
-</h1>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>House Price Prediction</title>
+        <link rel="stylesheet" href="/static/style.css">
+    </head>
+    <body>
+        <div class="form-box">
+            <h2>Boston House Price Prediction</h2>
+            <h2>{{prediction_text}}</h2>
+            <form action="{{url_for('predict')}}"method="post">
+                <div class="input-box"> 
+                    <input type="text" name="CRIM" required/>
+                    <label for="CRIM">CRIM</label>
+                </div>
+                <div class="input-box"> 
+                    <input type="text" name="ZN" required/>
+                    <label for="ZN">ZN</label>
+                </div>
+                <div class="input-box"> 
+                    <input type="text" name="INDUS" required/>
+                    <label for="INDUS">INDUS</label>
+                </div>
+                <div class="input-box"> 
+                    <input type="text" name="CHAS" required/>
+                    <label for="CHAS">CHAS</label>
+                </div>
+                <div class="input-box"> 
+                    <input type="text" name="NOX" required/>
+                    <label for="NOX">NOX</label>
+                </div>
+                <div class="input-box"> 
+                    <input type="text" name="RM" required/>
+                    <label for="RM">RM</label>
+                </div>
+                <div class="input-box"> 
+                    <input type="text" name="AGE" required/>
+                    <label for="AGE">AGE</label>
+                </div>
+                <div class="input-box"> 
+                    <input type="text" name="DIS" required/>
+                    <label for="DIS">DIS</label>
+                </div>
+                <div class="input-box"> 
+                    <input type="text" name="RAD" required/>
+                    <label for="RAD">RAD</label>
+                </div>
+                <div class="input-box"> 
+                    <input type="text" name="TAX" required/>
+                    <label for="TAX">TAX</label>
+                </div>
+                <div class="input-box"> 
+                    <input type="text" name="PTRATIO" required/>
+                    <label for="PTRATIO">PTRATIO</label>
+                </div>
+                <div class="input-box"> 
+                    <input type="text" name="B" required/>
+                    <label for="B">B</label>
+                </div>
+                <div class="input-box"> 
+                    <input type="text" name="LSTAT" required/>
+                    <label for="LSTAT">LSTAT</label>
+                </div>
+                <button type="submit">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Predict
+                </button>
+            </form>
+        </div>       
+    </body>
+</html>
